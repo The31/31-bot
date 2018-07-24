@@ -4,7 +4,9 @@ module.exports = (controller) => {
       url: process.env.SCHEDULE_WEBHOOK,
     },
   });
-  bot.sendWebhook({
-    text: 'This is working',
-  });
+  setInterval(() => {
+    bot.sendWebhook({
+      text: 'This is working',
+    });
+  }, 5000);
 };
