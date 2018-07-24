@@ -3,7 +3,7 @@ module.exports = (controller) => {
     incoming_webhook: {
       url: process.env.SCHEDULE_WEBHOOK,
     },
-  })
+  });
   bot.sendWebhook({
     text: 'This is working',
   });
